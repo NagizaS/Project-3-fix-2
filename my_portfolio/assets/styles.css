@@ -1,0 +1,247 @@
+body {
+    color: #191919;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-size: 14pt;
+    background-size: cover;
+	background-image: url("../images/bokeh.jpg");
+	height: auto;
+}
+#container {
+	width: 1280px;
+	height: auto;
+	background-color: #FFFFFF;
+	margin: auto;
+	}
+
+
+/*Float the Aside so it displays next to the Main*/
+
+aside {
+    width: 150px;
+    height: 1600px;
+    background-color: #646464;
+    float: left;
+}
+
+header {
+    width: 1280px;
+    height: 250px;
+    background-image: url("../images/header.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 50px 0px 0px 0px;
+}
+
+/*Float the Main so it shows up next to the Aside. Reduce widt by 150px so they both line in the header*/
+
+main {
+    width: 1100px;
+    height: 1780px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    float: left;
+}
+img {
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+
+/*Clear the float so the footer shows up in the right place again.*/
+footer {
+    width: 1280px;
+    height: 50px;
+    clear: both;
+	background-color: #646464;
+}
+
+h1 {
+    color: #6BE6FB;
+	font-family: politica,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	font-size: 24pt;
+}
+
+p{
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ h3{
+    font-size: 12pt;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+nav {
+    width: 1280px;
+    height: 50px;
+	position: fixed;
+	top: 0px;
+	background-color: white;
+}
+#container nav li {
+    display: block;
+    list-style-type: none;
+    width: 80px;
+    margin-right: 60px;
+    float: left;
+	font-family: neonoir, sans-serif;
+	font-size: 18pt;
+}
+
+
+#container nav ul {
+	margin: auto;
+	width: 565px;
+}
+
+nav a:link {
+    color: #67DEF2;
+    text-decoration: none;
+	padding: 10px;
+}
+nav a:visited {
+    color: #5F2575;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+	background-color: #65EBFB;
+	padding: 10px;
+	border-radius: 20px
+}
+nav a:active {
+    color: #191919;
+    text-decoration: none;
+}.submit_btn {
+    width: 170px;
+    height: 30px;
+    background-color: #6BE6FB;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.submit_btn:hover {
+	-webkit-box-shadow: 6px 6px 35px 5px #000000;
+    box-shadow: 6px 6px 35px 5px #000000;
+}
+
+
+.column {
+	width: 250px;
+	height: 750px;
+	float: left;
+	margin-left: 60px
+}
+
+.cclicense {
+	width: 500px;
+	height: 20px;
+	clear: both;
+	padding: 50px 0px 0px 0px;
+}
+
+video{
+	width: 600px;
+	hight: 600px;
+	margin: auto;
+}
+
+/*Rules the page will follow for Tablet-sized devices*/
+@media (max-width: 1024px){
+	
+	#container{
+		width: 768px;
+	}
+	
+	header{
+		width: 768px;
+	}
+	
+	nav {
+		width: 768px;
+	}
+	
+	main{
+    width: 598px;
+	height: 2500px;
+	}
+	
+	footer{
+		width: 768px;
+	}
+	
+	.column{
+		margin: 0px 20px 0px 25px
+	}
+}
+
+
+/*Rules the page will follow on mobile devices*/
+@media screen and (max-width:375px){
+	#container{
+		width: 300px;
+	}
+	
+	header{
+		width: 300px;
+	}
+	
+	nav {
+		width: 300px;
+		height: 250px;
+		position: static;
+	}
+	
+	main{
+    width: 280px;
+	}
+	
+	footer{
+		width: 300px;
+	}
+	
+	aside {
+		display: none;
+	}
+		#container nav li {
+	display: list-item;
+	list-style-type: none;
+	float: none;
+	margin: 0px 0px 20px 0px;
+	width: 260px;
+	text-align: center;	
+	
+}
+	
+	#container nav ul {
+	width: 260px;
+}
+
+	nav a:link {
+	display: block;
+	width: 200px;
+	background-color: #65EBFB;
+	color: white;
+	}
+	
+	nav a:visited {
+	text-decoration: none;
+	color: white;
+}
+}
